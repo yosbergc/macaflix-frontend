@@ -32,11 +32,24 @@
     margin-top: 10px;
     color: rgb(189, 189, 189);
 }
+.movie-overview-single-inner-information .feature p {
+    color: rgb(189, 189, 189);
+}
+.movie-overview-single-inner-information .feature {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
 .movie-overview-single-inner-information .buttons {
     display: flex;
     gap: 10px;
     align-items: center;
     margin: 20px 0px;
+}
+.movie-overview-single-inner-information .feature .age {
+    padding: 5px;
+    border: 1px solid rgb(158, 158, 158);
+    width: fit-content;
+    margin-top: 5px;
 }
 .movie-overview-single-inner-information {
     display: grid;

@@ -36,8 +36,18 @@ function MovieSingle() {
                         </div>
                     </section>
                     <section className="innersecond">
-                        <strong>Duración:</strong>
-                        <p>1h 47m</p>
+                        <section className="feature">
+                            <strong>Duración:</strong>
+                            <p>1h 47m</p>
+                        </section>
+                        <section className="feature">
+                            <strong>Apto para:</strong>
+                            <p className='age'>12+</p>
+                        </section>
+                        <section className="feature">
+                            <strong>Director:</strong>
+                            <p>James Cameron</p>
+                        </section>
                     </section>
                 </section>
             </section>
