@@ -6,7 +6,7 @@ function Login() {
             <form className="login-page-form">
                 <h2>Iniciar sesión</h2>
                 <input type="text" name="email" id="email" placeholder='Email o número de celular'/>
-                <input type="password" name="email" id="password" placeholder='Contraseña' />
+                <input type="password" name="password" id="password" placeholder='Contraseña' />
 
                 <button className="primary-btn">Iniciar sesión</button>
                 <div className="bottom-form">
