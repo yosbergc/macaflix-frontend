@@ -13,6 +13,7 @@
 }
 .landing-section details div {
     font-size: 1rem;
+    padding: 20px;
 }
 .landing-section summary {
     cursor: pointer;
