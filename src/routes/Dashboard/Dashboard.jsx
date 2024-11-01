@@ -1,6 +1,7 @@
 import { Header } from "../../components/Dashboard/Header/Header"
 import { Footer } from "../../components/Landing/Footer/Footer"
 import { MovieSingle } from "../../components/Dashboard/MovieSingle/MovieSingle"
+import { Outlet } from "react-router-dom"
 import './dashboard.css'
 function Dashboard() {
     return (
@@ -17,6 +18,7 @@ function Dashboard() {
                 </section>
             </section>
             <Footer />
+            <Outlet />
         </>
     )
 }
