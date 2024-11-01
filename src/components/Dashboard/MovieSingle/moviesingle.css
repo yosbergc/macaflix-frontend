@@ -1,6 +1,9 @@
 .movie-show {
     max-width: 300px;
 }
+.movie-inner {
+    display: none;
+}
 .movie-single-container {
     position: relative;
 }
@@ -53,4 +56,9 @@
 }
 .icon-movie-inner:hover {
     transform: scale(1.2);
+}
+@media (min-width: 1000px) {
+    .movie-inner {
+        display: block;
+    }
 }

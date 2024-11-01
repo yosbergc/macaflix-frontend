@@ -8,7 +8,9 @@ function MovieSingle({ titulo, descripcion, duracion }) {
     const [showMovieInfo, setShowMovieInfo] = useState(false)
     return (
         <section className="movie-single-container">
-            <section className="movie-show" onMouseEnter={() => setShowMovieInfo(true)}>
+            <section className="movie-show" onMouseEnter={() => {
+                setTimeout(() => {setShowMovieInfo(true)}, 300)
+            }}>
                 <img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/11/08/imagen-promocional-de-jujutsu-kaisen.jpeg" alt="Jujutsu Kaisen" />
             </section>
             {
