@@ -11,8 +11,8 @@ function Header() {
                 <UserDropdown />
             </header>
             <section className="hero-section-inner">
-                <h2>Dark</h2>
-                <p>La desaparición de dos niños muestra los vínculos entre cuatro familias y expone el pasado de una pequeña ciudad.</p>
+                <h2>Jujutsu Kaisen</h2>
+                <p>Un estudiante de secundaria común y corriente con una fuerza sobrenatural impresionante. Después de un encuentro con maledictos, seres malvados que se alimentan de energía negativa, Yuji se ve involucrado en el mundo de la maldición.</p>
                 <div>
                     <button className="secondary-btn"><FaPlay />Reproducir</button>
                     <button className="terceary-btn"><GrCircleInformation  size={23}/>Más Información</button>
