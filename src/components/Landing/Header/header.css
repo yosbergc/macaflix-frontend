@@ -1,0 +1,101 @@
+header img {
+    width: 120px;
+}
+.hero-section {
+    background-image: url('../../../assets/hero-section.jpg');
+    background-size: cover;
+    min-height: 90vh;
+    padding: 20px;
+    position: relative;
+    color: white;
+    display: grid;
+}
+.hero-section > * {
+    position: relative;
+    z-index: 2;
+}
+.hero-section::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(#000000c7, #00000096, #000000c9);
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hero-section h1 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    text-wrap: balance;
+    margin-bottom: 20px;
+}
+.hero-section strong {
+    font-size: 1.3rem;
+}
+.hero-inner div {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.primary-btn {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: 400;
+    color: white;
+    background-color: #e50914;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.secondary-btn {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: 600;
+    color: #e50914;
+    background-color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.primary-btn:hover {
+    background-color: #840309;
+}
+.secondary-btn:hover {
+    background-color: rgb(232, 232, 232);
+}
+.hero-inner p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    max-width: 700px;
+    text-wrap: balance;
+}
+@media (min-width: 1000px) {
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-inner h1 {
+        font-size: 3rem;
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 3rem;
+        margin-bottom: 40px;
+    }
+    .hero-inner p {
+        text-align: center;
+    }
+}

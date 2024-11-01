@@ -12,12 +12,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route>
-          <Route path='/' element={Landing} />
-          <Route path='/login' element={Login} />
-          <Route path='/register' element={Register} />
-          <Route path='/dashboard' element={Dashboard} />
-          <Route path='/dashboard/movie/:movie' element={MovieSingle} />
-          <Route path='*' element={NotFound} />
+          <Route path='/' element={<Landing />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/dashboard/movie/:movie' element={<MovieSingle />} />
+          <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

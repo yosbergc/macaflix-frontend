@@ -1,0 +1,11 @@
+.desktop-menu {
+    display: none;
+}
+@media (min-width: 1000px) {
+    .mobile-menu-button {
+        display: none;
+    }
+    .desktop-menu {
+        display: block;
+    }
+}
