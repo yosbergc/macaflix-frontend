@@ -1,6 +1,7 @@
 import MacaflixLogo from '../../../assets/macaflix.png'
 import { Menu } from '../Menu/Menu'
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import './header.css'
 function Header() {
     return (
@@ -14,10 +15,10 @@ function Header() {
                 <strong>A partir de USD 3,99. Cancela cuando quieras.</strong>
                 <p>¿Quieres ver Macaflix ya? Ingresa a tu cuenta o regístrate para poder disfrutar de tu membresía.</p>
                 <div>
-                    <button className="primary-btn">Iniciar sesión
+                    <Link className="primary-btn" to='/login'>Iniciar sesión
                     <FaArrowRight />
-                    </button>
-                    <button className="secondary-btn">Registrarse</button>
+                    </Link>
+                    <Link className="secondary-btn" to='/register'>Registrarse</Link>
                 </div>
             </section>
         </section>

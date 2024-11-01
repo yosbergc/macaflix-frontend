@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { IoMenu } from "react-icons/io5"
+import { Link } from 'react-router-dom';
 import './menu.css'
 function Menu() {
     const [mobileMenu, setMobileMenu] = useState(false)
@@ -16,7 +17,7 @@ function Menu() {
             }
             <section className="desktop-menu">
                 <nav>
-                    <button className="primary-btn">Iniciar sesión</button>
+                    <Link className="primary-btn" to='/login'>Iniciar sesión</Link>
                 </nav>
             </section>
         </section>
