@@ -6,6 +6,7 @@ import { Register } from '../routes/Register/Register'
 import { Dashboard } from '../routes/Dashboard/Dashboard'
 import { MovieSingle } from '../routes/MovieSingle/MovieSingle'
 import { NotFound } from '../routes/NotFound/NotFound'
+import { Account } from '../routes/Account/Account'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard />}>
             <Route path='m/:movie' element={<MovieSingle />} />
           </Route>
+          <Route path='/account' element={<Account />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
