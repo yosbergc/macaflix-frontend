@@ -1,0 +1,19 @@
+.landing-section {
+    width: 100%;
+}
+.landing-faq-inner {
+    display: grid;
+    flex-direction: column;
+    gap: 10px;
+}
+.landing-section details {
+    background-color: rgb(27, 26, 26);
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.landing-section details div {
+    font-size: 1rem;
+}
+.landing-section summary {
+    cursor: pointer;
+}
