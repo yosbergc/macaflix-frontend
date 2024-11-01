@@ -8,7 +8,7 @@ function Register() {
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
                 <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario"/>
                 <input type="text" name="email" id="email" placeholder='Email o número de celular'/>
-                <input type="password" name="email" id="password" placeholder='Contraseña' />
+                <input type="password" name="password" id="password" placeholder='Contraseña' />
                 <select name="genero" id="genero">
                     <option value="genero">Genero</option>
                     <option value="hombre">Hombre</option>
