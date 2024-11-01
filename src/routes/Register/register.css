@@ -1,4 +1,4 @@
-.login-page {
+.register-page {
     background: url('../../assets/hero-section.jpg');
     height: 100vh;
     width: 100%;
@@ -6,11 +6,11 @@
     display: grid;
     place-content: center;
 }
-.login-page > * {
+.register-page > * {
     position: relative;
     z-index: 2;
 }
-.login-page::before {
+.register-page::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -19,14 +19,14 @@
     left: 0px;
     background-color: rgba(0, 0, 0, 0.509);
 }
-.login-page .login-page-form {
+.register-page .register-page-form {
     background-color: rgba(0, 0, 0, 0.693);
     padding: 50px 20px;
     border-radius: 8px;
     color: white;
     max-width: 500px;
 }
-.login-page .login-page-form input {
+.register-page .register-page-form input, .register-page .register-page-form select {
     width: 100%;
     height: 50px;
     margin: 10px 0px;
@@ -34,34 +34,38 @@
     background-color: rgb(36, 36, 36);
     border: 1px solid gray;
     font-size: 1.1rem;
+    color: rgb(215, 215, 215);
 }
-.login-page .login-page-form button {
+.register-page input::-webkit-input-placeholder, .register-page select::-webkit-input-placeholder {
+    color: rgb(215, 215, 215);
+}
+.register-page .register-page-form button {
     width: 100%;
     justify-content: center;
     margin: 20px 0px;
 }
-.login-page .login-page-form h2 {
+.register-page .register-page-form h2 {
     margin-bottom: 10px;
 }
-.login-page .login-page-form a {
+.register-page .register-page-form a {
     color: white;
     text-decoration: none;
 }
-.login-page .login-page-form p {
+.register-page .register-page-form p {
     color: gray;
 }
-.login-page .login-page-form .bottom-form {
+.register-page .register-page-form .bottom-form {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 1.2rem;
     flex-wrap: wrap;
 }
-.login-page .login-page-form h2 {
+.register-page .register-page-form h2 {
     font-size: 2rem;
 }
 @media (min-width: 1000px) {
-    .login-page .login-page-form {
+    .register-page .register-page-form {
         padding: 50px;
     }
 }
