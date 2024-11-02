@@ -1,8 +1,21 @@
-# React + Vite
+# Macaflix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Macaflix is one project that was created inspired from Netflix just to practice.
 
-Currently, two official plugins are available:
+Backend:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Express.js for routing.
+- Sequelize for ORM
+- Postgresql for database
+- Cors to allow external requests
+- JWT to authentication
+- Bcrypt to hash passwords in database.
+
+This is the repository for the backend:
+- [Macaflix Backend](https://github.com/yosbergc/macaflix-backend)
+
+Frontend:
+- React
+- React Router
+- React Icons
+- Sonner - External component by [Emil](https://x.com/emilkowalski_) to send notifications - [Repository website]((https://github.com/emilkowalski/sonner))
