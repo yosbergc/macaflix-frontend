@@ -2,7 +2,12 @@ import './login.css'
 import { Link } from 'react-router-dom'
 import { login } from '../../services/login'
 import { Toaster, toast } from 'sonner'
+import { useContext } from 'react'
+import { userContext } from '../../context/userContext'
+import { useNavigate } from 'react-router-dom'
 function Login() {
+    const navigate = useNavigate()
+    const { loginUser } = useContext(userContext)
     function handleSubmit(event) {
         event.preventDefault()
         const formData = new FormData(event.target)
@@ -15,7 +20,8 @@ function Login() {
 
         login({ correo, clave })
           .then(data => {
-            console.log(data)
+            loginUser(data.nombre, data.token)
+            navigate('/dashboard')
           })
           .catch(error => toast.error(error.message))
     }

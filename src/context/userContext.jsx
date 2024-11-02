@@ -1,12 +1,14 @@
-import { createContext } from "react";
+import { createContext, useEffect } from "react";
 import { useUser } from '../hooks/useUser'
 const userContext = createContext()
 
 function ProvideUser({ children }) {
-    const { user } = useUser()
-    
+    const { user, loginUser, logoutUser } = useUser()
+
     return <userContext.Provider value={{
-        user
+        user,
+        loginUser,
+        logoutUser
     }}>
         { children }
     </userContext.Provider>

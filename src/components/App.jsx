@@ -7,23 +7,24 @@ import { Dashboard } from '../routes/Dashboard/Dashboard'
 import { MovieSingle } from '../routes/MovieSingle/MovieSingle'
 import { NotFound } from '../routes/NotFound/NotFound'
 import { Account } from '../routes/Account/Account'
+import { ProtectedRoute } from '../routes/ProtectedRoute/ProtectedRoute'
 
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route>
           <Route path='/' element={<Landing />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/dashboard' element={<Dashboard />}>
+          <Route path='/dashboard' element={<ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>}>
             <Route path='m/:movie' element={<MovieSingle />} />
           </Route>
           <Route path='/account' element={<Account />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
   )
 }
 

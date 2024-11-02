@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
 import { registerUser } from '../../services/registerUser'
-import './register.css'
 import { Toaster, toast } from "sonner"
+import './register.css'
+
+
 function Register() {
     function handleForm(event) {
         event.preventDefault()
