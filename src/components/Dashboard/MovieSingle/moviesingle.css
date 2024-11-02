@@ -12,7 +12,8 @@
 }
 .movie-show img {
     width: 100%;
-    height: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 .movie-single-container {
     margin-top: 20px;
