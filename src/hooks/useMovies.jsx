@@ -11,7 +11,7 @@ function useMovies() {
             .then(movies => setMovies(movies))
             .catch(error => console.error(error))
         }
-    }, [])
+    }, [user])
     return { movies }
 }
 
