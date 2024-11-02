@@ -1,1 +1,1 @@
-export const HOSTNAME = 'https://macaflix-backend.onrender.com/'
+export const HOSTNAME = 'https://macaflix-backend.onrender.com'
