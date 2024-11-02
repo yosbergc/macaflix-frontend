@@ -1,11 +1,29 @@
 import './login.css'
 import { Link } from 'react-router-dom'
+import { login } from '../../services/login'
+import { Toaster, toast } from 'sonner'
 function Login() {
+    function handleSubmit(event) {
+        event.preventDefault()
+        const formData = new FormData(event.target)
+        const correo = formData.get('email')
+        const clave = formData.get('password')
+
+        if (!correo || !clave) {
+            return toast.error('Necesitamos que rellenes los campos para poder ingresar.');
+        }
+
+        login({ correo, clave })
+          .then(data => {
+            console.log(data)
+          })
+          .catch(error => toast.error(error.message))
+    }
     return (
         <section className="login-page">
-            <form className="login-page-form">
+            <form className="login-page-form" onSubmit={handleSubmit}>
                 <h2>Iniciar sesión</h2>
-                <input type="text" name="email" id="email" placeholder='Email o número de celular'/>
+                <input type="text" name="email" id="email" placeholder='Email o usuario'/>
                 <input type="password" name="password" id="password" placeholder='Contraseña' />
 
                 <button className="primary-btn">Iniciar sesión</button>
@@ -14,6 +32,7 @@ function Login() {
                     <Link to='/register'>Registrate ahora</Link>
                 </div>
             </form>
+            <Toaster richColors/>
         </section>
     )
 }

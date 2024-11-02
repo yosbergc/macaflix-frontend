@@ -23,6 +23,7 @@ function Register() {
             clave,
             genero
         }).then(response => toast(response))
+        .catch(error => toast.error(error.message))
     }
     return (
         <section className="register-page">

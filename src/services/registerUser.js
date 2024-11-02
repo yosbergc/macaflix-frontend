@@ -14,10 +14,15 @@ function registerUser({ nombre, usuario, correo, clave, genero }) {
         },
         body: JSON.stringify(data)
     }).then(data => {
+        if (!data.ok) {
+            return data.json().then(error => { throw new Error(error) || 'Hubo un error'})
+        }
         return data.json()
     })
     .then(information => information)
-    .catch(error => console.log(error))
+    .catch(error => {
+        throw error
+    })
 }
 
 export { registerUser }
