@@ -18,4 +18,4 @@ Frontend:
 - React
 - React Router
 - React Icons
-- Sonner - External component by [Emil](https://x.com/emilkowalski_) to send notifications - [Repository website]((https://github.com/emilkowalski/sonner))
+- Sonner - External component by [Emil](https://x.com/emilkowalski_) to send notifications - [Repository website](https://github.com/emilkowalski/sonner)
