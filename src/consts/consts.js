@@ -1,1 +1,1 @@
-export const HOSTNAME = 'http://localhost:5000'
+export const HOSTNAME = 'https://macaflix-backend.onrender.com/'
