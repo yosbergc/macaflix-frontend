@@ -1,6 +1,9 @@
 .movie-show {
     max-width: 300px;
 }
+.movie-inner img {
+    cursor: pointer;
+}
 .movie-inner {
     display: none;
 }
