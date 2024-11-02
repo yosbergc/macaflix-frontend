@@ -25,7 +25,7 @@ function App() {
           <Route path='/dashboard' element={<ProtectedRoute>
             <Dashboard />
           </ProtectedRoute>}>
-            <Route path='m/:movie' element={<MovieSingle />} />
+            <Route path='m/:id' element={<MovieSingle />} />
           </Route>
           <Route path='/account' element={<ProtectedRoute>
               <Account />

@@ -6,7 +6,10 @@ import { GrLike } from "react-icons/gr";
 import { GrDislike } from "react-icons/gr";
 import { FaRegHeart } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 function MovieSingle() {
+    const { id } = useParams()
+    console.log(id)
     const navigate = useNavigate()
 
     function handleBack() {
